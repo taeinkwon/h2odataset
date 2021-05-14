@@ -1,4 +1,4 @@
-# H2OVerification
+# H2O Dataset information
 ## Dataset Structure 
 
 <pre>
@@ -64,7 +64,7 @@ cam_to_obj <br>
 21 numbers : 1 center, 8 corners, 12 mid edge point. <br>
 00. background (no object), 01. book, 02. espresso, 03. lotion, 04. spray, 05. milk, 06. cocoa, 07. chips, 08. capuccino
 
-<img id="image_canv" src="obj_point_order.jpg" style="transform: rotate(270deg);"/>
+<img id="image_canv" src="obj_point_order.jpg"/>
 
 ### object_pose_RT
 1 (object class) + 16 numbers, 4x4 camera matrix
