@@ -3,7 +3,7 @@
 
 <pre>
 .
-├── bh1
+├── h1
 │   ├── 0
 │   │   │── cam0
 │   │   │   ├── rgb
@@ -25,16 +25,17 @@
 │   ├── 2
 │   ├── 3
 │   └── ...
-├── bh2
-├── bk1
-├── bk2
+├── h2
+├── k1
+├── k2
 └── ...
 </pre>
 
 cam0 ~ cam3 are fixed cameras. cam4 is an head-mounted camera (egocentric view). <br>
-train_sequences = ['bh1', 'bh2', 'bk1', 'bk2', 'bo1', 'bo2', 'ph1', 'ph2', 'pk1', 'pk2', 'po1', 'po2', 'sh1', 'sh2', 'sk1'] (subject 1,2,3) <br>
-val_sequences = ['sk2', 'so1', 'so2'] (subject 3)<br>
-test_sequences  = ['th1', 'th2', 'tk1', 'tk2', 'to1', 'to2'] (subject4)<br>
+train_sequences = ['subject1/h1', 'subject1/h2', 'subject1/k1', 'subject1/k2', 'subject1/o1', 'subject1/o2', 'subject2/h1', 'subject2/h2', 'subject2/k1', 
+'subject2/k2', 'subject2/o1', 'subject2/o2', 'subject3/h1', 'subject3/h2', 'subject3/k1'] (subject 1,2,3) <br>
+val_sequences = ['subject3/k2', 'subject3/o1', 'subject3/o2'] (subject 3)<br>
+test_sequences  = ['subject4/h1', 'subject4/h2', 'subject4/k1', 'subject4/k2', 'subject4/o1', 'subject4/o2'] (subject4)<br>
 
 
 ### rgb
@@ -72,8 +73,7 @@ cam_to_obj <br>
 00. background (no verb), 01. grab, 02. place, 03. open, 04. close, 05. pour, 06. take out, 07. put in, 08. apply, 09. read, 10. spray, 11. squeeze
 
 ### action_label
-Todo: will update this part later <br>
-Combination of noun (object label) and verb (verb label). 12*9 => 108
+Combination of noun (object class) and verb (verb label). 
 00. no verb + no object, 01. grab + no object, 02. place + no object, 03. open + no object, 04. close + no object, 05. pour, 06. take out + no object, 07. put in + no object, 08. apply + no object, 09. read + no object, 10. spray + no object, 11. squeeze + no object, 12. grab + book, 13. place + book, 14. open + book, ...
 
 0 background
