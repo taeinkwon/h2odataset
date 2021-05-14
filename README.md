@@ -74,7 +74,6 @@ cam_to_obj <br>
 
 ### action_label
 Combination of noun (object class) and verb (verb label). 
-00. no verb + no object, 01. grab + no object, 02. place + no object, 03. open + no object, 04. close + no object, 05. pour, 06. take out + no object, 07. put in + no object, 08. apply + no object, 09. read + no object, 10. spray + no object, 11. squeeze + no object, 12. grab + book, 13. place + book, 14. open + book, ...
 
 0 background
 1 grab book
