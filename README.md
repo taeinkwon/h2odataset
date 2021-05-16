@@ -62,7 +62,15 @@ First 59 numbers belong to the left hand. Next 59 numbers belong to the right ha
 cam_to_obj <br>
 1 (object class) + 21 * 3 (x, y, z in order) <br>
 21 numbers : 1 center, 8 corners, 12 mid edge point. <br>
-00. background (no object), 01. book, 02. espresso, 03. lotion, 04. spray, 05. milk, 06. cocoa, 07. chips, 08. capuccino
+0 background (no object) <br>
+1 book <br>
+2 espresso <br>
+3 lotion <br>
+4 spray <br>
+5 milk <br>
+6 cocoa <br>
+7 chips <br>
+8 capuccino <br>
 
 <img id="image_canv" src="obj_point_order.jpg"/>
 
@@ -70,48 +78,64 @@ cam_to_obj <br>
 1 (object class) + 16 numbers, 4x4 camera matrix
 
 ### verb_label
-00. background (no verb), 01. grab, 02. place, 03. open, 04. close, 05. pour, 06. take out, 07. put in, 08. apply, 09. read, 10. spray, 11. squeeze
+0 background (no verb) <br>
+1 grab <br>
+2 place <br>
+3 open <br>
+4 close <br>
+5 pour <br>
+6 take out <br>
+7 put in <br>
+8 apply <br>
+9 read <br>
+10 spray <br>
+11 squeeze <br>
 
 ### action_label
 Combination of noun (object class) and verb (verb label). 
 
-0 background
-1 grab book
-2 grab espresso
-3 grab lotion
-4 grab spray
-5 grab milk
-6 grab cocoa
-7 grab chips
-8 grab cappuccino
-9 place book
-10 place espresso
-11 place lotion
-12 place spray
-13 place milk
-14 place cocoa
-15 place chips
-16 place cappuccino
-17 open lotion
-18 open milk
-19 open chips
-20 close lotion
-21 close milk
-22 close chips
-23 pour milk
-24 take out espresso
-25 take out cocoa
-26 take out chips
-27 take out cappuccino
-28 put in espresso
-29 put in cocoa
-30 put in cappuccino
-31 apply lotion
-32 apply spray
-33 read book
-34 read espresso
-35 spray spray
-36 squeeze lotion
+0 background <br>
+1 grab book <br>
+2 grab espresso <br>
+3 grab lotion <br>
+4 grab spray <br>
+5 grab milk <br>
+6 grab cocoa <br>
+7 grab chips <br>
+8 grab cappuccino <br>
+9 place book <br>
+10 place espresso <br>
+11 place lotion <br>
+12 place spray <br>
+13 place milk <br>
+14 place cocoa <br>
+15 place chips <br>
+16 place cappuccino <br>
+17 open lotion <br>
+18 open milk <br>
+19 open chips <br>
+20 close lotion <br>
+21 close milk <br>
+22 close chips <br>
+23 pour milk <br>
+24 take out espresso <br>
+25 take out cocoa <br>
+26 take out chips <br>
+27 take out cappuccino <br>
+28 put in espresso <br>
+29 put in cocoa <br>
+30 put in cappuccino <br>
+31 apply lotion <br>
+32 apply spray <br>
+33 read book <br>
+34 read espresso <br>
+35 spray spray <br>
+36 squeeze lotion <br>
+
+[Train set file](action_labels/action_train.txt) <br>
+[Validation set file](action_labels/action_val.txt) <br>
+[Test set file](action_labels/action_test.txt) <br>
+
 
 ### cam_instrinsics.txt
 six numbers : fx, fy, cx, cy, width, height
