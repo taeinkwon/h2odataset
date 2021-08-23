@@ -56,7 +56,7 @@ cam_to_hand <br>
 1 (whether annotate or not, 0: not annotate 1: annotate) + 21 * 3 (x, y, z in order) + 1 + 21 * 3 (right hand) <br>
 First 64 numbers belong to the left hand. Next 64 numbers belong to the right hand 
 ### hand_pose_MANO
-1 (whether annotate or not, 0: not annotate 1: annotate) + 48 pose values + 10 shape values + 1 + 48 + 10 (right hand) <br>
+1 (whether annotate or not, 0: not annotate 1: annotate) + 3 translation values + 48 pose values + 10 shape values + 1 + 3 + 48 + 10 (right hand) <br>
 First 59 numbers belong to the left hand. Next 59 numbers belong to the right hand 
 ### obj_pose
 cam_to_obj <br>
@@ -132,10 +132,15 @@ Combination of noun (object class) and verb (verb label).
 35 spray spray <br>
 36 squeeze lotion <br>
 
+## For Action
 [Train set file](action_labels/action_train.txt) <br>
 [Validation set file](action_labels/action_val.txt) <br>
 [Test set file](action_labels/action_test.txt) <br>
 
+## For Poses
+[Train set file](pose_lists/pose_test.txt) <br>
+[Validation set file](pose_lists/pose_train.txt) <br>
+[Test set file](pose_lists/pose_test.txt) <br>
 
 ### cam_instrinsics.txt
 six numbers : fx, fy, cx, cy, width, height
