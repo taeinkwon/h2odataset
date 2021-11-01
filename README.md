@@ -132,7 +132,7 @@ Combination of noun (object class) and verb (verb label).
 35 spray spray <br>
 36 squeeze lotion <br>
 
-## For Action
+## For Actions
 [Train set file](action_labels/action_train.txt) <br>
 [Validation set file](action_labels/action_val.txt) <br>
 [Test set file](action_labels/action_test.txt) <br>
