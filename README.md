@@ -1,7 +1,7 @@
 # H2O Dataset information
 
 ## News
-Please Download new labels "mano_labels_v1_1.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
+Please Download new labels "manolabel.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
 ### To do:
 Releasing visualization code.
 
