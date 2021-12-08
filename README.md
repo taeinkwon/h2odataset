@@ -1,4 +1,10 @@
 # H2O Dataset information
+
+## News
+Please Download new labels "mano_labels_v1_1.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
+### To do:
+Releasing visualization code.
+
 ## Dataset Structure 
 
 <pre>
@@ -144,3 +150,16 @@ Combination of noun (object class) and verb (verb label).
 
 ### cam_instrinsics.txt
 six numbers : fx, fy, cx, cy, width, height
+
+# Citations
+If you find any usefulness of this datset, please consider citing:
+```
+@InProceedings{Kwon_2021_ICCV,
+    author    = {Kwon, Taein and Tekin, Bugra and St\"uhmer, Jan and Bogo, Federica and Pollefeys, Marc},
+    title     = {H2O: Two Hands Manipulating Objects for First Person Interaction Recognition},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+    month     = {October},
+    year      = {2021},
+    pages     = {10138-10148}
+}
+```
