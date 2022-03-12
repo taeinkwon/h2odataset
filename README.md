@@ -1,9 +1,13 @@
 # H2O Dataset information
 
 ## News
-Please Download new labels "manolabel.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
-### To do:
-Releasing visualization code.
+
+12/Mar./2022 Visualization code is pusblished. https://github.com/taeinkwon/h2oplayer
+11/Mar./2022 Updated new labels to the existing files.
+8/Dec./2021 Please Download new labels "manolabel.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
+
+# Visualization code (H2OPlayer)
+https://github.com/taeinkwon/h2oplayer
 
 ## Dataset Structure 
 
