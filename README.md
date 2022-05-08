@@ -2,26 +2,35 @@
 
 ## News
 
-**9/May/2022**: The download scirpt (downlaod_script.py) is uploaded. <br>
-**8/May/2022**: Labels for hand pose and object pose are realiesed. Please check https://h2odataset.ethz.ch <br>
+**9/May/2022**: The download script (downlaod_script.py) is uploaded. <br>
+**8/May/2022**: Labels for hand pose and object pose are released. Please check https://h2odataset.ethz.ch <br>
 **4/May/2022**: The H2O dataset will be part of the workshop, Human Body, Hands, and Activities from Egocentric and Multi-view Cameras@ECCV2022. Please check our workshop site (https://sites.google.com/view/egocentric-hand-body-activity) and our challenges. <br>
-**12/Mar./2022**: Visualization code is pusblished. https://github.com/taeinkwon/h2oplayer <br>
+**12/Mar./2022**: Visualization code is published. https://github.com/taeinkwon/h2oplayer <br>
 **11/Mar./2022**: Updated new labels to the existing files. <br>
-**8/Dec./2021**: Please Download new labels "manolabel_v1.1.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
+**8/Dec./2021**: Please Download new labels "manolabel_v1.1.tar.gz" in https://h2odataset.ethz.ch for MANO parameters. We will also update existing files soon. <br>
 
 # Visualization code (H2OPlayer)
 ![Alt text](h2o_player.png?raw=true "H2OPlayer")
 Please check the visualization code in the following link: https://github.com/taeinkwon/h2oplayer.
 
 # Download script
-Once you receive the username and password from the download page (https://h2odataset.ethz.ch), you can either download directly form the download page (https://h2odataset.ethz.ch) or use download_script.py.
+
+## Dependencies
+- python3
+- tqdm
+- pathlib
+- requests
+- argparse
+
+
+Once you receive the username and password from the download page (https://h2odataset.ethz.ch), you can either download directly from the download page (https://h2odataset.ethz.ch) or use download_script.py.
 ```
 python download_script.py --username "username" --password "password" --mode "type of view" --dest "dest folder path"
 ```
 We provide three different modes (views):
-- all: download entire data including five views (four fixed views, one egocentric view).
+- all: download the entire data, including five views (four fixed views, one egocentric view).
 - ego: download only egocentric-view data.
-- pose: download only pose (hand, object, egocentric view) without rgbd images.
+- pose: download only pose (hand, object, egocentric view) without RGB-D images.
 
 # Dataset Structure 
 
@@ -116,7 +125,7 @@ cam_to_obj <br>
 11 squeeze <br>
 
 ### action_label
-Combination of noun (object class) and verb (verb label). 
+Combination of a noun (object class) and a verb (verb label)
 
 0 background <br>
 1 grab book <br>
@@ -170,7 +179,7 @@ Combination of noun (object class) and verb (verb label).
 six numbers : fx, fy, cx, cy, width, height
 
 # Citations
-If you find any usefulness of this datset, please consider citing:
+If you find any usefulness in this dataset, please consider citing:
 ```
 @InProceedings{Kwon_2021_ICCV,
     author    = {Kwon, Taein and Tekin, Bugra and St\"uhmer, Jan and Bogo, Federica and Pollefeys, Marc},
