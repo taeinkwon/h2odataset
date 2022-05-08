@@ -2,14 +2,28 @@
 
 ## News
 
+**9/May/2022**: The download scirpt (downlaod_script.py) is uploaded. <br>
+**8/May/2022**: Labels for hand pose and object pose are realiesed. Please check https://h2odataset.ethz.ch <br>
+**4/May/2022**: The H2O dataset will be part of the workshop, Human Body, Hands, and Activities from Egocentric and Multi-view Cameras@ECCV2022. Please check our workshop site (https://sites.google.com/view/egocentric-hand-body-activity) and our challenges. <br>
 **12/Mar./2022**: Visualization code is pusblished. https://github.com/taeinkwon/h2oplayer <br>
 **11/Mar./2022**: Updated new labels to the existing files. <br>
-**8/Dec./2021**: Please Download new labels "manolabel.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
+**8/Dec./2021**: Please Download new labels "manolabel_v1.1.tar.gz" in https://h2odataset.ethz.ch for mano parameters. We will also update existing files soon. <br>
 
 # Visualization code (H2OPlayer)
-https://github.com/taeinkwon/h2oplayer
+![Alt text](h2o_player.png?raw=true "H2OPlayer")
+Please check the visualization code in the following link: https://github.com/taeinkwon/h2oplayer.
 
-## Dataset Structure 
+# Download script
+Once you receive the username and password from the download page (https://h2odataset.ethz.ch), you can either download directly form the download page (https://h2odataset.ethz.ch) or use download_script.py.
+```
+python download_script.py --username "username" --password "password" --mode "type of view" --dest "dest folder path"
+```
+We provide three different modes (views):
+- all: download entire data including five views (four fixed views, one egocentric view).
+- ego: download only egocentric-view data.
+- pose: download only pose (hand, object, egocentric view) without rgbd images.
+
+# Dataset Structure 
 
 <pre>
 .
