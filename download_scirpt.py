@@ -18,7 +18,7 @@ def downloader(url, dest, user, password, resume_byte_pos=None):
     initial_pos = resume_byte_pos if resume_byte_pos else 0
     mode = 'ab' if resume_byte_pos else 'wb'
 
-    progress_bar = tqdm.tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True, unit_divisor=block_size,
+    progress_bar = tqdm.tqdm(total=total_size_in_bytes, unit='iB', unit_scale=True, #unit_divisor=block_size,
                   desc=local_filename, initial=initial_pos, ascii=True, miniters=1)
     with open(os.path.join(dest, local_filename), mode) as f:
         for chunk in r.iter_content(chunk_size=block_size): 
