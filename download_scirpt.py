@@ -55,7 +55,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     url = 'https://h2odataset.ethz.ch/data/dataset/'
     if args.mode == 'all':
-        file_name_list = +['object.zip','label_split.zip','subject1_v1_1.tar.gz','subject2_v1_1.tar.gz','subject3_v1_1.tar.gz','subject4_v1_1.tar.gz']
+        file_name_list = ['object.zip','label_split.zip','subject1_v1_1.tar.gz','subject2_v1_1.tar.gz','subject3_v1_1.tar.gz','subject4_v1_1.tar.gz']
     elif args.mode == 'ego':
         file_name_list = ['object.zip','label_split.zip','subject1_ego_v1_1.tar.gz','subject2_ego_v1_1.tar.gz','subject3_ego_v1_1.tar.gz','subject4_ego_v1_1.tar.gz']
     elif args.mode == 'pose':
