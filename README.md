@@ -2,6 +2,7 @@
 
 ## News
 
+**15/Aug./2022**: Our challenges are open here ([hand](https://codalab.lisn.upsaclay.fr/competitions/4822), [action](https://codalab.lisn.upsaclay.fr/competitions/4820)). Our 1st phase of the challenges will be closed at October 1st, 2022. <br>
 **9/May/2022**: The download script (downlaod_script.py) is uploaded. <br>
 **8/May/2022**: Labels for hand pose and object pose are released. Please check https://h2odataset.ethz.ch <br>
 **4/May/2022**: The H2O dataset will be part of the workshop, Human Body, Hands, and Activities from Egocentric and Multi-view Cameras@ECCV2022. Please check our workshop site (https://sites.google.com/view/egocentric-hand-body-activity) and our challenges. <br>
